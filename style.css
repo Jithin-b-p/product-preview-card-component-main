@@ -89,9 +89,10 @@ body {
   }
 }
 .preview-details__heading {
-  font-family: var(--ff-secondary);
-  color: var(--color-neutral-300);
   padding-inline-end: 3rem;
+  font-family: var(--ff-secondary);
+  line-height: 1;
+  color: var(--color-neutral-300);
 }
 
 @media only screen and (max-width: 39.625em) {
