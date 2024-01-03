@@ -26,7 +26,16 @@
   <body>
     <main>
       <div class="product-preview__card">
-        <div class="product-image"></div>
+        <div class="product-container">
+          <picture class="product-container__image">
+            <source
+              srcset="./images/image-product-mobile.jpg"
+              media="(max-width: 39.625em)"
+              src="./images/image-product-desktop.jpg"
+            />
+            <img src="./images/image-product-desktop.jpg" alt="product image" />
+          </picture>
+        </div>
 
         <div class="preview-details">
           <h1 class="preview-details__heading">
@@ -40,7 +49,7 @@
 
           <div class="product-details__prices">
             <span class="product-details__revise-price">$149.99</span>
-            <span class="product-details__price">$169.99</span>
+            <del class="product-details__price">$169.99</del>
           </div>
           <button class="product-details__btn">
             <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
